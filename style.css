@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1800px;
+    margin: 0px auto;
+}
+
+.head-image {
+    background-image:  url(assets/background_upper.png), url(assets/background_1.png), url(assets/background.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position-y: 0px, 489px, -200px;
+    background-position-x: 0px, 62px, 0px;
+    background-color: white;
+    height: 890px;
+    filter: brightness(115%)
+}
+
+header {
+    display: flex;
+    margin-left: 200px;
+    padding-top: 85px;
+    
+}
+
+header a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+h1 {
+    display: block;
+    color: #858688;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    margin-right: 572px;
+}
+
+h1 span {
+    color: #5b4295;
+}
+
+.head-menu {
+    padding-top: 10px;
+}
+
+.head-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-right: 50px;
+}
+
+.head-menu ul li {
+    display: inline;
+    padding-right: 18px;
+}
+
+.head-menu ul li a {
+    color: rgba(69, 69, 69, 255);
+}
+
+.head-menu ul li a:hover {
+    color: grey;
+}
+
+.header-text {
+    top: 200px;
+    position: relative;
+    left: 50%;
+    transform: translate(-5%);
+}
