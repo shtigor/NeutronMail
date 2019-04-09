@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
     padding: 0;
     margin: 0;
 }
@@ -25,25 +26,23 @@ header {
     display: flex;
     margin-left: 200px;
     padding-top: 85px;
-    
-}
-
-header a {
-    text-decoration: none;
-    font-size: 18px;
 }
 
 h1 {
     display: block;
-    color: #858688;
     font-size: 30px;
     font-weight: bold;
     margin: 0;
     margin-right: 572px;
 }
 
-h1 span {
+.logo-violet {
     color: #5b4295;
+}
+
+h1 a {
+    color: #858688;
+    text-decoration: none;
 }
 
 .head-menu {
@@ -64,15 +63,112 @@ h1 span {
 
 .head-menu ul li a {
     color: rgba(69, 69, 69, 255);
+    text-decoration: none;
 }
 
 .head-menu ul li a:hover {
     color: grey;
 }
 
+.language {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 200px;
+    padding-top: 14px;
+}
+
+.language li {
+    display: inline;
+    color: rgba(149, 149, 149, 255);
+}
+
+.language li a {
+    color: rgba(149, 149, 149, 255);
+    text-decoration: none;
+}
+
+.language li a:hover {
+    color: grey;
+}
+
+.language li a:focus {
+    color: grey;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .header-text {
-    top: 200px;
     position: relative;
-    left: 50%;
-    transform: translate(-5%);
+    top: 100px;
+    color: #7a7a79;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.header-text p {
+    margin: 0;
+    padding: 0;
+}
+
+.header-text p:nth-child(2) {
+    font-size: 35px;
+}
+
+.red {
+    color: red;
+}
+
+.login::before {
+    content: url(assets/login.png);
+    position: relative;
+    top: 5px;
+    right: 4px;
+}
+
+.login {
+    margin-right: 30px;
+    margin-top: 12px;
+    color: #454545;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signup {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 6px 25px;
+    margin-top: 5px;
+    background: linear-gradient(135deg, rgba(36,49,115,1) 0%, rgba(149,37,60,1) 100%);
+    color: white;
+    border-radius: 25px;
+}
+
+.header-group-btn {
+    position: relative;
+    top: 150px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.header-group-btn ul {
+    list-style: none;
+}
+
+.header-group-btn li {
+    display: inline;
+}
+
+.header-group-btn a {
+    text-decoration: none;
+}
+
+.apple-store-logo {
+    background-image: url(assets/apple.png);
+    background-repeat: no-repeat;
+    background-color: #5b4295;
 }
