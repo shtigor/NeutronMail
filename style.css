@@ -141,8 +141,7 @@ h1 a {
 }
 
 .btn {
-    padding: 6px 25px;
-    margin-top: 5px;
+    padding: 10px 25px;
     background: linear-gradient(135deg, rgba(36,49,115,1) 0%, rgba(149,37,60,1) 100%);
     color: white;
     border-radius: 25px;
@@ -161,14 +160,90 @@ h1 a {
 
 .header-group-btn li {
     display: inline;
+    margin-right: 20px;
 }
 
 .header-group-btn a {
     text-decoration: none;
 }
 
-.apple-store-logo {
-    background-image: url(assets/apple.png);
+.create-account-btn {
+    padding: 10px 50px;
+    background: linear-gradient(135deg, rgba(36,49,115,1) 0%, rgba(149,37,60,1) 100%);
+    color: white;
+    border-radius: 25px;
+}
+
+.store-logo {
+    display: inline-block;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(36,49,115,1) 0%, rgba(149,37,60,1) 100%);
+    height: 26px;
+    width: 26px;
+    padding: 10px;
+}
+
+.feature {
+    height: 300px;
+}
+
+.clearfix {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-item {
+    position: relative;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.feature-item p,
+.feature-item h2 {
+    margin: 0;
+    text-align: left;
+}
+
+.feature-item h2 {
+    font-size: 35px;
+    color: rgba(85, 85, 85, 255);
+}
+
+.below-title {
+    color: rgba(149, 147, 147, 255);
+    font-size: 20px;
+}
+
+.small-description {
+    padding-top: 35px;
+    height: 60px;
+    width: 358px;
+    font-size: 14px;
+    color: rgba(149, 147, 147, 255);
+}
+
+.feature-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 67px;
+    height: 68px;
     background-repeat: no-repeat;
-    background-color: #5b4295;
+    background-image: url("assets/features_sprites.png");
+}
+
+.feature-privacy {
+    background-position: -97px -10px;
+}
+
+.feature-encryption {
+    background-position: -187px -10px;
+}
+
+.feature-protect {
+    background-position: -10px -10px;
 }
