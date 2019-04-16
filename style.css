@@ -333,7 +333,7 @@ h1 a {
     position: absolute;
     top: 22px;
     right: 320px;
-    width: 1030px;
+    width: 1040px;
     border-top: 1px solid #b9b9b9; 
 }
 
@@ -369,7 +369,7 @@ h1 a {
     background-position-y: 170px;
     background-position-x: 0px;
     background-color: white;
-    height: 1052px;
+    height: 1352px;
 }
 
 .testonials blockquote {
@@ -408,15 +408,31 @@ h1 a {
     background-color: black;
 }
 
-.any-device {
-    width: 450px;
-    text-align: right;
-    padding-top: 60px;
+.download {
+    margin-left: 600px;
+    height: 510px;
 }
 
-.download {
-    display: flex;
-    margin-left: 600px;
+.download .tech {
+    position: relative;
+    top: -200px;
+    left: 300px;
+    z-index: 1;
+}
+
+.any-device {
+    position: relative;
+    top: -600px;
+    width: 450px;
+    text-align: right;
+}
+
+.any-device p {
+    padding-bottom: 10px;
+}
+
+.any-device a {
+    padding-left: 10px;
 }
 
 .download h3 {
@@ -432,45 +448,160 @@ h1 a {
     line-height: 1.4;
 }
 
-.download img {
-    position: relative;
-    top: -210px;
-    left: -150px;
-}
-
-.stores {
-    position: relative;
-    top: 230px;
-    left: 150px;
-    z-index: 1;
-}
-
-.stores a {
-    padding-left: 10px;
-}
-
 .grey-line-5::after {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 370px;
+    left: -200px;
     width: 1400px;
-    border-left: 60px solid #b9b9b9;
+    border-top: 1px solid #b9b9b9;
 }
 
 .plans {
     display: flex;
     flex-direction: column;
-    margin-top: -140px;
+    height: 270px;
 }
 
 .plans h3,
 .plans p,
 .plans .upgrade-donate {
     align-self: center; 
+    margin: 0;
 }
 
+.plans h3,
+.plans p {
+    color: rgba(83, 83, 83, 255);
+    text-align: center;
+    line-height: 1.2;
+}
 
+.plans h3 {
+    font-size: 34px;
+}
+
+.plans p {
+    font-size: 29px;
+}
+
+.upgrade-donate {
+    padding-top: 50px;
+}
+
+.upgrade-plan,
+.donate {
+    color: white;
+    text-decoration: none;
+}
+
+.upgrade-plan {
+    padding: 15px 25px;
+    background: linear-gradient(80deg, rgba(99,107,146,1) 0%, rgba(96,49,107,1) 100%);
+    border-radius: 25px;
+    margin-right: 20px;
+}
+
+.donate {
+    padding: 15px 40px;
+    background: linear-gradient(80deg, rgba(55,185,225,1) 0%, rgba(93,124,234,1) 100%);
+    border-radius: 25px;
+}
+
+.upgrade-plan::before {
+    content: url("assets/upgrade.png");
+    position: relative;
+    top: 4px;
+    left: 0px;
+}
+
+.donate::before {
+    content: url("assets/donate.png");
+    position: relative;
+    top: 2px;
+    left: 0px;
+}
+
+.sponsors {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.sponsors p {
+    position: relative;
+    text-align: right;
+    margin-right: 45px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: rgba(122, 122, 122, 255);
+}
+
+.grey-line-6::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: -400px;
+    width: 1390px;
+    border-top: 1px solid #b9b9b9;
+}
+
+.grey-line-6::after {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 990px;
+    height: 441px;
+    border-left: 1px solid #b9b9b9;
+}
+
+.sponsors {
+    height: 300px;
+}
+
+.sponsors ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.sponsors ul a {
+    padding: 20px;
+}
+
+.sponsors ul li {
+    display: inline-block;
+}
+
+.sponsors ul a img {
+    height: 38px;
+}
+.footer {
+    max-width: 1200px;
+    width: 100%;
+    margin-left: 220px;
+}
+
+.footer__contacts p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer__contacts {
+    width: 213px;
+    line-height: 1;
+    font-size: 14px;
+    color: rgba(92, 92, 92, 255);
+}
+
+.footer__contacts--bold {
+    font-weight: bold;
+}
+
+.footer__contacts--mod {
+    padding-bottom: 10px;
+}
 
 @media only screen and (max-width: 800px) {
     .container {
