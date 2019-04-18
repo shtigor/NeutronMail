@@ -338,25 +338,28 @@ h1 a {
 }
 
 .brands {
-    height: 100px;
+    max-width: 1100px;
+    width: 100%;
 }
 
 .brands img {
-    height: 100%;
+    height: 30px;
 }
 
 .brands ul {
     padding: 0;
     margin: 0;
-    margin-left: 20px;
     list-style: none;
+    text-align: center;
 }
 
 .brands ul li {
-    display: inline;
-    margin-left: 45px;
-    line-height: 30px;
+    display: inline-block;
     filter: brightness(0%) contrast(0%);
+}
+
+.brands ul li a {
+    margin: 20px;
 }
 
 .brands li:hover {
@@ -369,7 +372,7 @@ h1 a {
     background-position-y: 170px;
     background-position-x: 0px;
     background-color: white;
-    height: 1352px;
+    height: 1320px;
 }
 
 .testonials blockquote {
@@ -417,7 +420,6 @@ h1 a {
     position: relative;
     top: -200px;
     left: 300px;
-    z-index: 1;
 }
 
 .any-device {
@@ -487,6 +489,7 @@ h1 a {
 
 .upgrade-donate {
     padding-top: 50px;
+    width: 450px;
 }
 
 .upgrade-plan,
@@ -555,10 +558,6 @@ h1 a {
     border-left: 1px solid #b9b9b9;
 }
 
-.sponsors {
-    height: 300px;
-}
-
 .sponsors ul {
     list-style: none;
     text-align: center;
@@ -572,15 +571,30 @@ h1 a {
 
 .sponsors ul li {
     display: inline-block;
+    filter: brightness(0%) contrast(0%);
+}
+
+.sponsors li:hover {
+    filter: brightness(100%);
 }
 
 .sponsors ul a img {
     height: 38px;
 }
 .footer {
+    display: flex;
     max-width: 1200px;
     width: 100%;
     margin-left: 220px;
+}
+
+.footer__contacts {
+    position: relative;
+    width: 213px;
+    line-height: 1;
+    font-size: 14px;
+    color: rgba(92, 92, 92, 255);
+    padding-left: 20px;
 }
 
 .footer__contacts p {
@@ -588,19 +602,143 @@ h1 a {
     padding: 0;
 }
 
-.footer__contacts {
-    width: 213px;
-    line-height: 1;
-    font-size: 14px;
+.footer__contacts p:nth-child(1),
+.footer__contacts p:nth-child(2),
+.footer__contacts p:nth-child(3) {
+    padding-bottom: 10px;
+}
+
+.footer__contacts a {
+    font-weight: bold;
+    text-decoration: none;
     color: rgba(92, 92, 92, 255);
 }
 
-.footer__contacts--bold {
-    font-weight: bold;
+.footer__contacts p:nth-child(4) {
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
-.footer__contacts--mod {
-    padding-bottom: 10px;
+.grey-line-7::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    height: 140px;
+    border-left: 1px solid #b9b9b9;
+}
+
+.footer__company {
+    position: relative;
+    margin-left: 400px;
+    margin-right: 90px;
+}
+
+.footer__legal,
+.footer__neutronmail {
+    width: 140px;
+}
+
+.footer__legal {
+    padding-right: 70px;
+}
+
+.footer__company a,
+.footer__legal a,
+.footer__neutronmail a {
+    text-decoration: none;
+    color: rgba(92, 92, 92, 255);
+}
+
+.footer__company a:hover,
+.footer__legal a:hover,
+.footer__neutronmail a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+.footer__company ul li,
+.footer__legal ul li,
+.footer__neutronmail ul li {
+    /* content: "\2022";
+    color: rgba(92, 92, 92, 255);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em; */
+    font-size: 14px;
+    text-align: right;
+}
+
+.footer__company--mod,
+.footer__legal--mod,
+.footer__neutronmail--mod {
+    font-size: 16px;
+    color: rgba(92, 92, 92, 255);
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+.footer__company ul,
+.footer__legal ul,
+.footer__neutronmail ul {
+    /* list-style: none; */
+    margin: 0;
+    padding-right: 15px;
+}
+
+.grey-line-8::after {
+    content: "";
+    position: absolute;
+    left: 90px;
+    height: 370px;
+    border-left: 1px solid #b9b9b9;
+}
+
+.social-networks {
+    margin-top: 115px;
+    margin-left: 220px;
+}
+
+.social-networks ul {
+    padding: 0;
+    list-style: none;
+    font-size: 12px;
+}
+
+.social-networks ul li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.social-networks ul li a {
+    text-decoration: none;
+    color: rgba(92, 92, 92, 255);
+}
+
+.social-networks ul li a:hover {
+    text-decoration: underline;
+    color: grey;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 12px;
+    color: rgba(92, 92, 92, 255);
+    margin-left: 220px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .container {
+        width: 1300px;
+        margin: 0px auto;
+    }
+
+    /* header {
+        margin-left: 35px;
+        padding-top: 20px;
+    } */
+    
 }
 
 @media only screen and (max-width: 800px) {
