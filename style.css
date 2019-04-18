@@ -2,24 +2,26 @@
 
 body {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 18px;
+    font-size: 1.2em;
     padding: 0;
     margin: 0;
 }
 
-.container {
-    width: 1800px;
-    margin: 0px auto;
-}
+/* .container {
+    margin: 0 auto;
+    width: 100%;
+}  */
 
 .head-image {
-    background-image:  url(assets/background_upper.png), url(assets/background_1.png), url(assets/background.png);
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position-y: 0px, 489px, -200px;
-    background-position-x: 0px, 62px, 0px;
+    position: relative;
+    background-image:  url("assets/background_image.png");
+    background-repeat: no-repeat;
     background-color: white;
     height: 890px;
-    filter: brightness(115%);
+    filter: brightness(115%); 
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 200px;
 }
 
 header {
@@ -30,7 +32,7 @@ header {
 
 h1 {
     display: block;
-    font-size: 30px;
+    font-size: 1.5em;
     font-weight: bold;
     margin: 0;
     margin-right: 572px;
@@ -102,7 +104,7 @@ h1 a {
     position: relative;
     top: 100px;
     color: #7a7a79;
-    font-size: 50px;
+    font-size: 2.5em;
     text-align: center;
     font-weight: 700;
 }
@@ -184,6 +186,7 @@ h1 a {
 }
 
 .feature {
+    margin-top: 480px;
     height: 290px;
 }
 
@@ -260,7 +263,7 @@ h1 a {
 .grey-line-1::after {
     content: "";
     position: absolute;
-    top: -130px;
+    top: 100px;
     left: 410px;
     height: 210px;
     border-left: 1px solid #b9b9b9;
@@ -286,7 +289,7 @@ h1 a {
 
 
 .more-about-security {
-    height: 225px;
+    height: 100%;
 }
 .security-text {
     display: flex;
