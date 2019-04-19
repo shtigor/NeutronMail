@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Titillium Web', sans-serif;
     font-size: 18px;
-    padding: 0;
-    margin: 0;
 }
 
 .container {
@@ -584,6 +591,7 @@ h1 a {
     max-width: 1200px;
     width: 100%;
     margin-left: 220px;
+    flex-wrap: wrap;
 }
 
 .footer__contacts {
@@ -624,6 +632,10 @@ h1 a {
     left: 0px;
     height: 140px;
     border-left: 1px solid #b9b9b9;
+}
+
+.footer-menu {
+    display: flex;
 }
 
 .footer__company {
@@ -728,8 +740,9 @@ h1 a {
 
 @media only screen and (max-width: 1300px) {
     .container {
-        width: 1300px;
+        width: 100%;
         margin: 0px auto;
+        max-width: 1300px;
     }
 
     header {
@@ -753,7 +766,11 @@ h1 a {
 
     .clearfix li:first-child {
         margin-left: 0px;
-    } 
+    }
+
+    .clearfix li:nth-child(3) {
+        margin-right: 0;
+    }
 
     .small-description {
         padding-top: 25px;
@@ -786,8 +803,6 @@ h1 a {
     }
 
     .security-text {
-        display: flex;
-        flex-direction: column;
         width: 600px;
         margin-left: 160px;
     }
@@ -862,36 +877,225 @@ h1 a {
 
 @media only screen and (max-width: 800px) {
     .container {
-        width: 800px;
+        max-width: 800px;
         margin: 0px auto;
+        width: 100%;
+    }
+
+    .head-image{
+        height: 800px;
     }
 
     header {
-        margin-left: 35px;
-        padding-top: 20px;
+        margin-left: 25px;
+        padding-top: 25px;
     }
 
     h1 {
-        margin-right: 20px;
-        font-size: 20px;
+        margin-right: 50px;
+        font-size: 25px;
     }
 
-    .head-menu ul li {
-        padding-right: 14px;
+    .head-menu {
+        font-size: 16px; 
+    }
+
+    .head-menu ul {
+        padding-right: 0px;
+    }
+
+    .auth {
+        display: grid;
+        width: 130px;
         font-size: 15px;
+        height: 90px;
+        justify-items: center;
+
     }
 
     .login {
-        margin-right: 10px;
-        font-size: 12px;
+        margin-right: 0px;
+        margin-top: 0px;
     }
 
     .signup {
-        font-size: 12px;
+        margin-top: 10px;
+        max-width: 50px;
     }
 
     .btn {
-        padding: 8px 12px;
+        padding: 10px 20px;
     }
+
+    .language {
+        padding-left: 25px;
+        padding-top: 0px;
+        margin-top: -25px;
+        width: 300px;
+        font-size: 15px;
+    }
+
+    .header-text {
+        font-size: 40px;
+    }
+
+    .header-text p:nth-child(2) {
+        font-size: 30px;
+    }
+
+    .grey-line-1::after,
+    .grey-line-2::after,
+    .grey-line-3::after,
+    .grey-line-4::before,
+    .grey-line-5::after,
+    .grey-line-6::after,
+    .grey-line-6::before,
+    .grey-line-7::before,
+    .grey-line-8::after {
+        display: none;
+    }
+
+    .feature {
+        height: 690px;
+    }
+
+    .clearfix {
+        flex-direction: column;
+    }
+
+    .feature-item {
+        margin-right: 0px;
+        align-self: center;
+        margin-bottom: 20px;
+    }
+
+    .security-text {
+        text-align: center;
+        margin-left: 0;
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .learn-more-about-security {
+        margin: auto;
+        left: 300px;
+        top: 30px;
+    }
+
+    .brands {
+        height: 150px;
+    }
+
+    .testonials {
+        height: 1120px;
+    }
+
+    .testonials blockquote {
+        margin-left: 0px;
+        margin: auto;
+    }
+
+    .dot-section {
+        display: none;
+    }
+
+    .download {
+        margin-left: 0px;
+        height: 410px;
+        margin: auto;
+    }
+
+    .download .tech {
+        position: relative;
+        left: 440px;
+        width: 30%;
+        top: 50px;
+    }
+
+    .any-device {
+        position: relative;
+        top: -220px;
+        width: 316px;
+        left: 104px;
+        text-align: right;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 700px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .footer__company {
+        flex-wrap: wrap;
+        margin-left: 20px;
+        
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+
+    h1 {
+        margin-right: 0;
+        margin: auto;
+    }
+
+    .auth {
+        margin-bottom: 30px;
+    }
+
+    .more-about-security {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 300px;
+    }
+
+    .security-text {
+        margin: 0 20px;
+        height: 0;
+    }
+
+    .security-text h2, 
+    .security-text p {
+        margin: 0;
+        text-align: center;
+    }
+
+    .learn-more-about-security {
+        margin: auto;
+        left: 0;
+        top: 0;
+    }
+
+    .download {
+        height: 300px;
+    }
+
+    .download .tech {
+        display: none;
+    }
+
+    .any-device {
+        position: inherit;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .download p {
+        text-align: center;
+    }
+
 
 }
